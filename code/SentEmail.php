@@ -14,7 +14,8 @@ class SentEmail extends DataObject {
 		'Subject' => 'Varchar',
 		'Body' => 'HTMLText',
 		'CC' => 'Text',
-		'BCC' => 'Text'
+		'BCC' => 'Text',
+		'MessageID' => 'Varchar'
 	);
 
 	private static $summary_fields = array (
