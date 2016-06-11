@@ -39,10 +39,8 @@ class Permamail extends Email {
 			'To' => $this->To(),
 			'From' => $this->From(),
 			'Subject' => $this->Subject(),
-			'Body' => $this->Body(),
 			'CC' => $this->CC(),
-			'BCC' => $this->BCC(),
-			'SerializedEmail' => serialize($this)
+			'BCC' => $this->BCC()
 		));		
 		$record->write();
 
