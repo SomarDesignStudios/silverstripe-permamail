@@ -9,13 +9,13 @@
 class SentEmail extends DataObject {
 
 	private static $db = array (
-		'To' => 'Varchar',
-		'From' => 'Varchar',
-		'Subject' => 'Varchar',
+		'To' => 'Varchar(100)',
+		'From' => 'Varchar(100)',
+		'Subject' => 'Varchar(255)',
 		'Body' => 'HTMLText',
 		'CC' => 'Text',
 		'BCC' => 'Text',
-		'MessageID' => 'Varchar'
+		'MessageID' => 'Varchar(100)'
 	);
 
 	private static $summary_fields = array (
