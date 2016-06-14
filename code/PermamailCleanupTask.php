@@ -41,7 +41,7 @@ class PermamailCleanupTask extends BuildTask {
 		}
 
 		$stamp = strtotime("-{$count} $unit");
-		$date = date('Y-m-d H:i:s');
+		$date = date('Y-m-d H:i:s', $stamp);
 
 		$count = SentEmail::get()->filter(array(
 			'Created:LessThan' => $date
